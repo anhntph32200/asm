@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-@include('partials.header');
+@include('partials.header')
 <body>
 
     <div id="wrapper">
