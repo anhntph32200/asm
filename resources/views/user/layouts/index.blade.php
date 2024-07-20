@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-@include('partials.header')
+@include('user.partials.header')
 <body>
 
     <div id="wrapper">
