@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="logo">
-                    <a href="garden-index.html"><img src="images/version/garden-logo.png" alt=""></a>
+                    <a href="garden-index.html"><img src="{{ asset('images/version/garden-logo.png') }}" alt=""></a>
                 </div><!-- end logo -->
             </div>
         </div><!-- end row -->
