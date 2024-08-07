@@ -5,10 +5,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    @if ($article)
+                    @if ($data)
                         <h2><i class="fa fa-leaf bg-green"></i>
                             <strong>Category:</strong>
-                            <a href="{{ route('news.category', $article->category_id) }}">{{ $article->category_name }}</a>
+                            <a href="{{ route('user.category', $data->category_id) }}">{{ $data->category->name }}</a>
                         </h2>
                     @endif
                 </div><!-- end col -->
@@ -22,7 +22,7 @@
         </div><!-- end container -->
     </div><!-- end page-title -->
 
-    @if ($article)
+    @if ($data)
         <section class="section wb">
             <div class="container">
                 <div class="row">
@@ -32,15 +32,15 @@
                                 <span class="color-green"><a href="garden-category.html" title="">Gardening</a></span>
 
                                 <article>
-                                    <h1>{{ $article->title }}</h1>
+                                    <h1>{{ $data->title }}</h1>
                                 </article>
 
                                 <div class="blog-meta big-meta">
                                     <small><a href="garden-single.html" title="">Published:</strong>
-                                            {{ $article->created_at }}</a></small>
+                                            {{ $data->created_at }}</a></small>
                                     <small><a href="blog-author.html" title="">by Jessica</a></small>
                                     <small><a href="#" title=""><i class="fa fa-eye"></i><strong>Views:</strong>
-                                            {{ $article->views }}</a></small>
+                                            {{ $data->views }}</a></small>
                                 </div><!-- end meta -->
 
                                 <div class="post-sharing">
@@ -58,14 +58,14 @@
                             </div><!-- end title -->
 
                             <div class="single-post-media">
-                                @if ($article->image)
-                                    <img src="{{ $article->image }}" alt="{{ $article->title }}" class="img-fluid">
+                                @if ($data->image)  
+                                    <img src="{{ asset($data->image) }}" alt="{{ $data->title }}" class="img-fluid">
                                 @endif
                             </div><!-- end media -->
 
                             <div class="blog-content">
                                 <div class="pp">
-                                    <div>{{ $article->content }}</div>
+                                    <div>{{ $data->content }}</div>
                                 </div><!-- end pp -->
 
                                 <img src="upload/garden_single_02.jpg" alt="" class="img-fluid img-fullwidth">

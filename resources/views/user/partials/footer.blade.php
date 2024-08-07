@@ -4,7 +4,7 @@
             <div class="col-lg-8 offset-lg-2">
                 <div class="widget">
                     <div class="footer-text text-center">
-                        <a href="index.html"><img src="images/version/garden-footer-logo.png" alt="" class="img-fluid"></a>
+                        <a href="{{ route('user.index') }}"><img src="{{ asset('images/version/Thiết kế chưa có tên (1).png') }}" alt=""></a>
                         <p>Forest Time is a personal blog for handcrafted, cameramade photography content, fashion styles from independent creatives around the world.</p>
                         <div class="social">
                             <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              

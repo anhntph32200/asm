@@ -24,23 +24,24 @@
                 <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                     
                     <div class="page-wrapper">
-                        @if ($articles->isNotEmpty())
-                        @foreach ($articles as $article)
+                        @if ($data->isNotEmpty())
+                        @foreach ($data as $row)
                         <div class="blog-list clearfix">
                             <div class="blog-box row">
                                 <div class="col-md-4">
                                     <div class="post-media">
-                                        <a href="garden-single.html" title="">
-                                            <img src="upload/garden_sq_01.jpg" alt="" class="img-fluid">
+                                        <a href="{{ route('user.show', $row->id) }}" title="">
+                                            <img src="{{ asset($row->image) }}" alt="{{ $row->title }}" class="img-fluid">
                                             <div class="hovereffect"></div>
                                         </a>
                                     </div><!-- end media -->
                                 </div><!-- end col -->
 
                                 <div class="blog-meta big-meta col-md-8">
-                                    <span class="bg-aqua"><a href="garden-category.html" title="">Indoor</a></span>
-                                    <h4>  <a href="{{ route('news.show', $article->id) }}">{{ $article->title }}</a></a></h4>
-                                    <p>{{ Str::limit($article->content, 100) }}</p>
+                                    <span class="bg-aqua"><a href="{{ route('user.category', $row->category_id) }}"
+                                        title="">{{ $row->category->name }}</a></span>
+                                    <h4>  <a href="{{ route('user.show', $row->id) }}">{{ $row->title }}</a></a></h4>
+                                    <p>{{ Str::limit($row->content, 100) }}</p>
                                     <small><a href="garden-category.html" title=""><i class="fa fa-eye"></i>
                                             1887</a></small>
                                     <small><a href="garden-single.html" title="">11 July, 2017</a></small>

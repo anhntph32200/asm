@@ -40,7 +40,6 @@
     .center-side,
     .left-side,
     .right-side {
-        float: left;
         width: 50%;
     }
 }

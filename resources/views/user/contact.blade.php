@@ -1,8 +1,7 @@
 @extends('user.layouts.layout')
 
 @section('content')
-    <div id="map"></div>
-
+<iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d59588.70078291982!2d105.73485532057424!3d21.020927240130877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d21.014118399999997!2d105.8045952!4m5!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYywgVMOyYSBuaMOgIEZQVCBQb2x5dGVjaG5pYy4sIEPhu5VuZyBz4buRIDIsIDEzIFAuIFRy4buLbmggVsSDbiBCw7QsIFh1w6JuIFBoxrDGoW5nLCBOYW0gVOG7qyBMacOqbSwgSMOgIE7hu5lp!3m2!1d21.0381298!2d105.74726179999999!5e0!3m2!1svi!2s!4v1722782794766!5m2!1svi!2s" width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <section class="section wb">
         <div class="container">
             <div class="row">

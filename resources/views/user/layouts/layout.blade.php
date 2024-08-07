@@ -7,7 +7,7 @@
         <div class="collapse top-search" id="collapseExample">
             <div class="card card-block">
                 <div class="newsletter-widget text-center">
-                    <form class="form-inline" action="{{ route('news.search') }}" method="GET">
+                    <form class="form-inline" action="{{ route('user.search') }}" method="GET">
                         <input type="text" name="query" class="form-control" placeholder="What you are looking for?"
                             required>
                         <button type="submit" class="btn btn-primary">

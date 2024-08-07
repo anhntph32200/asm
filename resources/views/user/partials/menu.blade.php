@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="logo">
-                    <a href="garden-index.html"><img src="{{ asset('images/version/garden-logo.png') }}" alt=""></a>
+                    <a href="{{ route('user.index') }}"><img src="{{ asset('images/version/Thiết kế chưa có tên (2).png') }}" alt=""></a>
                 </div><!-- end logo -->
             </div>
         </div><!-- end row -->
@@ -19,22 +19,22 @@
             <div class="collapse navbar-collapse justify-content-md-center" id="Forest Timemenu">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link color-green-hover" href="garden-index.html">Home</a>
+                        <a class="nav-link color-green-hover" href="{{ route('user.index') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-green-hover" href="garden-category.html">Gardening</a>
+                        <a class="nav-link color-green-hover" href="#">Bóng đá</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-green-hover" href="garden-category.html">Outdoor Living</a>
+                        <a class="nav-link color-green-hover" href="#">Lịch thi đấu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-green-hover" href="garden-category.html">Indoor Living</a>
+                        <a class="nav-link color-green-hover" href="#">Các môn khác</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link color-green-hover" href="garden-category.html">Shopping Guides</a>
+                        <a class="nav-link color-green-hover" href="#">Video</a>
                     </li>  
                     <li class="nav-item">
-                        <a class="nav-link color-green-hover" href="garden-contact.html">Contact</a>
+                        <a class="nav-link color-green-hover" href="{{ route('user.contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>
